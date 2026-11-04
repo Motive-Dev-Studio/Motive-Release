@@ -1,0 +1,141 @@
+Motive Project License
+
+Copyright (c) 2023-2026 Motive
+
+ENGLISH TERMS - AUTHORITATIVE VERSION
+
+This license sets out separate terms for original Motive project code,
+texture assets, and model assets. Third-party materials remain subject to
+their respective licenses. This license does not alter their ownership or
+licensing terms.
+
+1. Project Code
+
+Permission is granted to use, copy, modify, and distribute the project code
+without requesting separate permission, subject to the following conditions:
+
+(a) Retain the above copyright notice and this license.
+(b) Clearly identify Motive as the source of the code used.
+
+This permission applies only to project code. It does not grant permission
+to use texture assets or model assets, which are governed by Sections 2 and 3,
+respectively.
+
+2. Texture Assets
+
+Permission is granted to use, copy, modify, and distribute the project's
+texture assets without requesting separate permission, subject to all of
+the following conditions:
+
+(a) Retain the above copyright notice and this license.
+(b) Clearly identify Motive as the source of the texture assets used.
+(c) Clearly and explicitly acknowledge the use of Motive texture assets in
+    the recipient project's public documentation, release page, or public
+    credits.
+
+A hidden comment alone does not satisfy the public acknowledgment requirement.
+Permission to use a texture asset does not grant permission to use any
+associated model asset.
+
+3. Model Assets - All Rights Reserved (ARR)
+
+All rights in the project's model assets are reserved by their respective
+rights holders. Except as permitted by applicable law, anyone other than the
+relevant rights holder must request and obtain prior express permission
+from that rights holder, or an author authorized to grant such permission,
+before using, copying, modifying, extracting, distributing, or incorporating
+model assets into another project.
+
+Public display, availability for download, or access to source files does
+not, by itself, grant permission to use model assets. No permission to use
+model assets is granted under Sections 1 or 2.
+
+Permission to use a model asset does not transfer ownership. The scope of
+permitted use is limited to the express permission granted by the relevant
+rights holder or authorized author.
+
+4. Ownership and Attribution
+
+Permission to use project code or assets does not transfer copyright or
+permit false claims of original authorship. Attribution must identify the
+original Motive material and must not misrepresent it as the recipient's
+original work.
+
+Model assets remain the property of their respective rights holders unless
+those rights holders expressly agree otherwise. Rights not expressly granted
+by this license are reserved, subject to applicable law.
+
+5. Disclaimer
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PROJECT CODE AND ASSETS
+ARE PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE AUTHORS
+AND RIGHTS HOLDERS SHALL NOT BE LIABLE FOR LOSSES ARISING FROM THE USE OF
+THE PROJECT CODE OR ASSETS.
+
+6. Governing Language
+
+The English terms, including this section, are the authoritative version of
+this license. The Chinese explanation below is provided for convenience only
+and does not create additional rights or obligations. In the event of any
+inconsistency, ambiguity, or dispute concerning interpretation between the
+English terms and the Chinese explanation, the English terms shall prevail.
+
+
+中文解释（仅供理解，以英文版为准）
+
+本许可证分别规定 Motive 原创项目代码、纹理资产和模型资产的使用条件。
+第三方内容仍适用各自的许可证，本许可证不改变其权利归属或授权条件。
+
+1. 项目代码
+
+允许使用、复制、修改和分发项目代码，无需另行申请，但须满足以下条件：
+
+(a) 保留上述版权声明及本许可证。
+(b) 明确标注所用代码来源于 Motive。
+
+此项授权仅适用于项目代码，不授予纹理资产或模型资产的使用许可。
+纹理资产和模型资产分别适用第 2 条和第 3 条。
+
+2. 纹理资产
+
+允许使用、复制、修改和分发项目纹理资产，无需另行申请，但须同时满足
+以下条件：
+
+(a) 保留上述版权声明及本许可证。
+(b) 明确标注所用纹理资产来源于 Motive。
+(c) 在使用方项目的公开说明、发布页面或公开致谢中，清晰、明确地声明
+    使用了 Motive 的纹理资产。
+
+仅在隐藏注释中署名不满足公开说明要求。纹理资产的使用许可不包含任何
+关联模型资产的使用许可。
+
+3. 模型资产：保留全部权利（ARR）
+
+模型资产的全部权利由相应权利人保留。除适用法律允许的情形外，任何非
+相应权利人如需使用、复制、修改、提取、分发模型资产，或将其用于其他
+项目，必须事先向该权利人或有权作出授权的作者申请，并取得明确许可。
+
+公开展示、可供下载或可访问源文件本身不构成模型资产的使用授权。
+第 1 条和第 2 条均不授予模型资产的使用许可。
+
+模型资产的使用许可不转移所有权。允许使用的范围仅限于相应权利人或
+有权作出授权的作者明确授予的范围。
+
+4. 权利归属与署名
+
+项目代码或资产的使用许可不转移版权，也不允许冒充原作者。署名须明确
+指出原始 Motive 内容，不得将其虚称为使用方的原创作品。
+
+除相应权利人另行明确约定外，模型资产仍归其所有。在适用法律允许的
+范围内，本许可证未明确授予的权利均予保留。
+
+5. 免责声明
+
+在适用法律允许的最大范围内，项目代码及资产按“原样”提供，不提供任何
+明示或默示担保。作者及权利人不对因使用项目代码或资产产生的损失承担责任。
+
+6. 语言效力
+
+英文条款（包括本条）为本许可证的正式版本。中文解释仅为阅读便利而
+提供，不新增权利或义务。英文条款与中文解释出现不一致、歧义或解释
+争议时，以英文条款为准。
