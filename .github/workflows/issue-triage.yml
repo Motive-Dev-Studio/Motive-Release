@@ -1,0 +1,24 @@
+name: Issue triage
+on:
+  issues:
+    types: [opened, edited, reopened]
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: issue-triage-${{ github.event.issue.number }}
+  cancel-in-progress: false
+jobs:
+  triage:
+    if: github.repository == 'Motive-Dev-Studio/Motive-Release'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/github-script@v9
+        with:
+          script: |
+            const {run} = require('./.github/scripts/issue-triage.cjs');
+            await run({github, context});
