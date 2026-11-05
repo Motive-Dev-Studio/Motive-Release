@@ -12,7 +12,7 @@ using the existing authorized GitHub account.
 
 - `README.md`, `LICENSE`, `motive.png`, `motive-showcase.png`, `motive_icon.png`.
 - The complete `.github` directory, including its scripts.
-- `SETUP.md` is maintainer documentation; `tests` is optional local validation.
+- `SETUP.md` is maintainer documentation.
 
 Keep the paths unchanged and place the files on the release repository's default
 branch. Enable Issues and GitHub Actions. The workflow requests `contents: read`
@@ -60,10 +60,6 @@ No issue content is executed, and no attachment is fetched.
 
 After uploading, manually verify the form and submit an authorized trial issue to check
 labels, editing, attachments, and reminders. Local checks do not prove hosted execution.
-
-## Local check
-
-Run `node --test tests/issue-triage.test.cjs` with Node.js 24 or newer.
 
 ## Official references
 
