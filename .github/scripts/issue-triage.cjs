@@ -52,6 +52,30 @@ function normalize(value) {
   return value.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 }
 
+/** Strip only the format owned by this workflow, preserving other title tags. */
+function shortTitle(title) {
+  const prefix = new RegExp(`^\\[(${CATEGORIES.join('|')})\\]\\[[^\\]\\r\\n]*\\]:\\s*`);
+  let result = title.trim();
+  while (prefix.test(result)) {
+    result = result.replace(prefix, '').trim();
+  }
+  return result;
+}
+
+function formatTitle(title, fields) {
+  if (!CATEGORIES.includes(fields[0]) || !fields[1] || textLength(fields[1]) > 50) {
+    return title;
+  }
+  const summary = shortTitle(title);
+  if (!summary) {
+    return title;
+  }
+  // Keep user-supplied brackets from becoming structural title delimiters.
+  const version = fields[1].replace(/\s+/g, ' ').replace(/\[/g, '（').replace(/\]/g, '）');
+  const prefix = `[${fields[0]}][${version}]: `;
+  return prefix + Array.from(summary).slice(0, 256 - Array.from(prefix).length).join('');
+}
+
 function bigrams(value) {
   const chars = Array.from(normalize(value));
   return new Set(chars.slice(1).map((char, i) => chars[i] + char));
@@ -65,8 +89,8 @@ function findSimilar(issue, candidates) {
     if (candidate.pull_request || candidate.number >= issue.number) {
       return false;
     }
-    const title = normalize(issue.title);
-    if (title.length >= 12 && title === normalize(candidate.title)) {
+    const title = normalize(shortTitle(issue.title));
+    if (title.length >= 12 && title === normalize(shortTitle(candidate.title))) {
       return true;
     }
     const otherFields = parse(candidate.body);
@@ -91,6 +115,11 @@ async function run({github, context}) {
   }
   const fields = parse(issue.body);
   const errors = validate(fields);
+  const title = formatTitle(issue.title, fields);
+  if (title !== issue.title) {
+    await api.update({...target, title});
+    issue.title = title;
+  }
   const current = issue.labels.map(label => typeof label === 'string' ? label : label.name);
   const desired = CATEGORIES.includes(fields[0]) ? [fields[0]] : [];
   if (errors.length) {
@@ -156,4 +185,4 @@ async function run({github, context}) {
   }
 }
 
-module.exports = {HEADINGS, parse, textLength, validate, findSimilar, run};
+module.exports = {HEADINGS, parse, textLength, validate, shortTitle, formatTitle, findSimilar, run};

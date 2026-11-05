@@ -28,6 +28,16 @@ Editing an issue updates its category and validation result without restoring a
 manually removed `Pending` label. Unrelated maintainer labels are preserved.
 Missing labels are created automatically.
 
+Players enter only a short summary in the title. After submission, automation formats
+it as `[Bug][Minecraft 26.3 + Motive 1.0.0]: Test bug`, using fields 1 and 2.
+NeoForge remains in the body. Editing the category or versions refreshes the prefix;
+editing the summary preserves the new summary. Existing generated prefixes are replaced,
+not stacked. Missing or invalid category/version fields leave the title unchanged.
+The summary is truncated only when necessary to keep the complete title within 256
+Unicode code points. Similarity checks ignore these generated prefixes.
+GitHub cannot dynamically assemble the title before submission; the change appears
+after the workflow runs. The bot changes only the title, never the issue state.
+
 GitHub does not expose maximum-character or maximum-file-count validators in its
 current form schema. The form states the limits; Actions checks them after submission
 and adds `Needs Information` with an editable reminder if necessary. This does not

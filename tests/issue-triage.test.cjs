@@ -2,12 +2,27 @@
 
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
-const {HEADINGS, parse, validate, textLength, findSimilar, run} =
+const {HEADINGS, parse, validate, textLength, formatTitle, findSimilar, run} =
   require('../.github/scripts/issue-triage.cjs');
 const fields = ['Bug', 'Minecraft 26.3 + Motive 1.0.0', '26.3.0.76',
   'Opening the machine screen stops the game after inserting an item.',
   'The screen should remain responsive.', '', ''];
 const body = values => values.map((value, i) => `### ${HEADINGS[i]}\n\n${value}`).join('\n\n');
+
+test('titles are formatted once and refreshed from edited fields', () => {
+  const expected = '[Bug][Minecraft 26.3 + Motive 1.0.0]: Test bug';
+  assert.equal(formatTitle('Test bug', fields), expected);
+  assert.equal(formatTitle(expected, fields), expected);
+  const edited = [...fields];
+  edited[0] = 'Suggestion';
+  edited[1] = 'Minecraft 26.3 + Motive 1.0.1';
+  assert.equal(formatTitle(expected, edited),
+      '[Suggestion][Minecraft 26.3 + Motive 1.0.1]: Test bug');
+  assert.equal(formatTitle('[Custom] Test bug', fields),
+      '[Bug][Minecraft 26.3 + Motive 1.0.0]: [Custom] Test bug');
+  assert.equal(formatTitle('Test bug', Array(7).fill('')), 'Test bug');
+  assert.equal(Array.from(formatTitle('😀'.repeat(300), fields)).length, 256);
+});
 
 test('required and optional fields, Unicode limits, images and attachments', () => {
   assert.deepEqual(validate(parse(body(fields))), []);
@@ -38,6 +53,10 @@ test('editing preserves unrelated labels and updates one reminder without closin
     get: async () => ({data: {number: 8, title: 'A report', body: body(fields), state: 'open',
       labels: [{name: 'Suggestion'}, {name: 'Needs Information'}, {name: 'Maintainer'}]}}),
     listLabelsForRepo: 'labels', listComments: 'comments',
+    update: async value => {
+      assert.deepEqual(Object.keys(value).sort(), ['issue_number', 'owner', 'repo', 'title']);
+      calls.push(['title', value.title]);
+    },
     removeLabel: async value => calls.push(['remove', value.name]),
     addLabels: async value => calls.push(['add', value.labels]),
     listForRepo: async () => ({data: []}),
@@ -48,6 +67,7 @@ test('editing preserves unrelated labels and updates one reminder without closin
       body: '<!-- motive-issue-triage --> old'}]};
   await run({github, context: {repo: {owner: 'Motive-Dev-Studio', repo: 'Motive-Release'},
     issue: {number: 8}, payload: {action: 'edited'}}});
-  assert.deepEqual(calls, [['remove', 'Suggestion'], ['remove', 'Needs Information'],
+  assert.deepEqual(calls, [['title', '[Bug][Minecraft 26.3 + Motive 1.0.0]: A report'],
+    ['remove', 'Suggestion'], ['remove', 'Needs Information'],
     ['add', ['Bug']], ['comment', 42]]);
 });
