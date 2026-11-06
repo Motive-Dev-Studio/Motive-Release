@@ -6,9 +6,9 @@
 
 A technology mod for Minecraft Java Edition.
 
-[Releases](https://github.com/Motive-Dev-Studio/Motive-Release/releases) · [Report an Issue](https://github.com/Motive-Dev-Studio/Motive-Release/issues) · [License](LICENSE)
+[Releases](https://github.com/Motive-Dev-Studio/Motive-Release/releases) · [Report an Issue](https://github.com/Motive-Dev-Studio/Motive-Release/issues) · [Join Us](join_collaboration.md) · [License](LICENSE)
 
-<sub>Development build · Last updated: 2026-11-05</sub>
+<sub>Development build · Last updated: 2026-11-07</sub>
 
 </div>
 
@@ -39,6 +39,10 @@ Animated machine parts, gauges, and tank levels show equipment activity. Many ma
 ## Feedback
 
 Use the [public issue tracker](https://github.com/Motive-Dev-Studio/Motive-Release/issues) for bugs and suggestions. For bugs, include the mod and game versions, reproduction steps, and relevant logs or screenshots. Check existing issues before submitting.
+
+## Join us
+
+Want to help test development previews, improve gameplay, support the community, or contribute localization? Read our [collaboration invitation and guidelines](join_collaboration.md) for participation terms and how to apply.
 
 ## Credits & license
 
