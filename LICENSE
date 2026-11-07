@@ -1,141 +1,308 @@
 Motive Project License
+Revision date: 2026-11-08
+Status: Current license for distributions carrying this revision.
 
-Copyright (c) 2023-2026 Motive
+Copyright (c) 2023-2026 BigFish520.
 
-ENGLISH TERMS - AUTHORITATIVE VERSION
+ENGLISH TERMS — SOLE AUTHORITATIVE VERSION
 
-This license sets out separate terms for original Motive project code,
-texture assets, and model assets. Third-party materials remain subject to
-their respective licenses. This license does not alter their ownership or
-licensing terms.
+1. Licensor, Scope, and Definitions
 
-1. Project Code
+The licensor is BigFish520, the individual rights holder of the original
+Motive project materials covered by this license, operating under the project
+name Motive and the studio name Motive Dev Studio (the "Licensor"). These
+project and studio names do not designate additional copyright owners.
+This license grants only rights that the Licensor owns or is authorized to
+license. Third-party materials and separately licensed components are excluded
+to the extent governed by their own licenses.
 
-Permission is granted to use, copy, modify, and distribute the project code
-without requesting separate permission, subject to the following conditions:
+"Official JAR" means a complete Motive mod JAR released or expressly designated
+for distribution by the Licensor. "Unmodified" means that the JAR's bytes and
+all included code, assets, metadata, and notices remain unchanged.
 
-(a) Retain the above copyright notice and this license.
-(b) Clearly identify Motive as the source of the code used.
+Official project and source-of-distribution link:
+https://github.com/Motive-Dev-Studio/Motive-Release
 
-This permission applies only to project code. It does not grant permission
-to use texture assets or model assets, which are governed by Sections 2 and 3,
-respectively.
+2. Direct Grant of Permission
 
-2. Texture Assets
+Subject to this license, the Licensor directly grants every recipient a
+worldwide, non-exclusive, royalty-free permission to download, install, run,
+copy, host, and redistribute Unmodified Official JARs, including on third-party
+platforms, download mirrors, launchers, servers, and in modpacks.
 
-Permission is granted to use, copy, modify, and distribute the project's
-texture assets without requesting separate permission, subject to all of
-the following conditions:
+No individual application, separate permission, prior approval, or notification
+to the Licensor is required for these activities. This is a license to use and
+distribute the covered material, not an assignment of ownership or permission
+to relicense it. Each subsequent recipient receives permission directly under
+this license and must comply with the same conditions.
 
-(a) Retain the above copyright notice and this license.
-(b) Clearly identify Motive as the source of the texture assets used.
-(c) Clearly and explicitly acknowledge the use of Motive texture assets in
-    the recipient project's public documentation, release page, or public
-    credits.
+3. Redistribution and Download Services
 
-A hidden comment alone does not satisfy the public acknowledgment requirement.
-Permission to use a texture asset does not grant permission to use any
-associated model asset.
+When hosting or redistributing an Official JAR:
 
-3. Model Assets - All Rights Reserved (ARR)
+(a) Keep the JAR complete and Unmodified, including its license and notices.
+(b) Clearly identify it as Motive and provide the official link in Section 1
+    on the download page, modpack page, or readily accessible accompanying
+    documentation. An additional direct link to the specific official release
+    is welcome but not required.
+(c) Do not describe a mirror, modpack, or third-party service as an official
+    Motive release channel or imply endorsement without express permission.
 
-All rights in the project's model assets are reserved by their respective
-rights holders. Except as permitted by applicable law, anyone other than the
-relevant rights holder must request and obtain prior express permission
-from that rights holder, or an author authorized to grant such permission,
-before using, copying, modifying, extracting, distributing, or incorporating
-model assets into another project.
+Providing a download link, storing identical copies in a distribution cache,
+or placing the unchanged JAR inside a modpack archive is permitted. These
+permissions include the copying and delivery needed to operate such services.
+They do not authorize replacing files inside the JAR or repackaging its contents
+into a different JAR. No additional public credit beyond clear identification
+and the official source link is required for distribution under this section;
+notices already included in the JAR must remain intact.
 
-Public display, availability for download, or access to source files does
-not, by itself, grant permission to use model assets. No permission to use
-model assets is granted under Sections 1 or 2.
+4. Modpacks and External Customization
 
-Permission to use a model asset does not transfer ownership. The scope of
-permitted use is limited to the express permission granted by the relevant
-rights holder or authorized author.
+Modpack creators may include Unmodified Official JARs or arrange their download
+without asking permission or notifying the Licensor. Keep the JAR intact and
+provide the official source link as specified in Section 3.
 
-4. Ownership and Attribution
+External configuration files, data packs, recipe additions or replacements,
+crafting adjustments, and scripts using supported configuration or integration
+mechanisms are permitted. They may be distributed with a modpack and are not
+considered modifications of the JAR merely because they change gameplay or
+recipes. This permission does not authorize distributing copied Motive code or
+assets outside the JAR, except as separately permitted by this license or
+another applicable license. Modpack-specific changes must not be presented as
+the behavior of an uncustomized official installation.
 
-Permission to use project code or assets does not transfer copyright or
-permit false claims of original authorship. Attribution must identify the
-original Motive material and must not misrepresent it as the recipient's
-original work.
+Notification is optional. The Licensor welcomes links to modpacks if their
+creators wish to share them; doing so is not a condition of permission.
 
-Model assets remain the property of their respective rights holders unless
-those rights holders expressly agree otherwise. Rights not expressly granted
-by this license are reserved, subject to applicable law.
+5. Modified Builds and Reserved Rights
 
-5. Disclaimer
+Except under a separate applicable license, express written permission from
+the Licensor, or rights that applicable law does not permit to be restricted,
+this license does not authorize distribution of modified Motive JARs or
+modified builds of the covered project code. This includes builds produced by
+decompiling, patching, altering, or recompiling the original JAR or its code.
+Making source code available does not itself grant permission to distribute
+modified builds. Attribution alone does not authorize such distribution.
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PROJECT CODE AND ASSETS
-ARE PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE AUTHORS
-AND RIGHTS HOLDERS SHALL NOT BE LIABLE FOR LOSSES ARISING FROM THE USE OF
-THE PROJECT CODE OR ASSETS.
+This restriction concerns unauthorized modified distributions; it does not
+declare every act of decompilation unlawful or limit non-waivable statutory
+rights. External customization expressly allowed by Section 4 is unaffected.
 
-6. Governing Language
+Model assets remain All Rights Reserved, subject to the permission to use and
+distribute them as part of an Unmodified Official JAR. Extracting, modifying,
+redistributing, or incorporating models separately requires express written
+permission, unless another applicable license or law permits it.
 
-The English terms, including this section, are the authoritative version of
-this license. The Chinese explanation below is provided for convenience only
-and does not create additional rights or obligations. In the event of any
-inconsistency, ambiguity, or dispute concerning interpretation between the
-English terms and the Chinese explanation, the English terms shall prevail.
+5.1. Supported Versions
+
+Supported versions retain closed project source. Sections 2 to 4 permit intact
+Official JAR distribution only; they do not grant separate extraction, reuse,
+modification, or redistribution rights for covered code or texture assets,
+subject to Section 6 and non-waivable rights under applicable law.
+
+5.2. Source Release After Support Ends
+
+The Licensor's release policy is to publish a version's project source after
+ending support for that version, excluding model assets. The Licensor will
+expressly identify the affected version, its end-of-support status, and its
+source release through the official project channel. A newer release, a period
+without updates, or access to files does not itself establish end of support
+or grant source-use permissions.
+
+Each source release must include an explicit version-specific license notice
+stating the permissions and conditions for its code and texture assets,
+including modification and redistribution rights. Those terms govern the
+identified materials; availability alone is not an unrestricted license.
+A version enters the source-released category only when the Licensor expressly
+releases its source with an accompanying license identifying the covered
+version and materials. End of support alone does not change its licensing
+status. A source publication without that license grants no additional rights
+under this section and must not be represented as an open-source grant.
+
+For code and textures expressly covered by that later license, the license
+accompanying the source release controls their use, modification, and
+redistribution and takes precedence over conflicting restrictions in this
+license to the extent expressly granted. No permissions extend by implication
+to unreleased versions, other releases, or excluded model assets. Whether a
+source release is open source, rather than merely source-available, depends on
+the permissions in its accompanying license. This license itself does not
+promise any specific future license or grant future open-source permissions.
+No particular release schedule is specified by this license.
+
+Model assets are excluded from source releases and remain All Rights Reserved.
+Opening code or textures does not authorize separate model reuse or inclusion
+of those models in modified builds. Unmodified Official JARs remain freely
+distributable under Sections 2 to 4. Section 6 remains applicable.
+
+All other rights not expressly granted are reserved.
+
+6. API, Third-Party Materials, and Prior Licenses
+
+The separately identified Motive API is licensed under its accompanying MIT
+License, located at src/api/LICENSE in the project and at
+META-INF/licenses/motive-api-LICENSE in the runtime JAR. Its MIT permissions
+remain effective; Sections 3 and 5 do not restrict rights granted for that
+component under MIT. Third-party components retain their respective licenses.
+Neither exception grants rights over other Motive code or assets.
+
+This revision applies to copies distributed under this revision. It does not
+retroactively revoke permissions already granted for earlier copies under
+another license. Redistribution must follow the license applicable to the
+particular copy, and notices must not be replaced to misstate those terms.
+
+7. Additional Permissions, Ownership, and Names
+
+Additional permissions must be expressly granted in writing by the Licensor
+or a representative authorized in writing to grant them. The grant must
+identify the covered materials and permitted activities; it applies only to
+its stated scope. A collaborator credit, repository access, or informal
+association with the project does not confer authority to grant permissions.
+
+No copyright ownership is transferred. No right to speak for Motive or Motive
+Dev Studio, claim official status, or imply sponsorship is granted. Accurate
+use of the names to identify the mod, its source, or modpack compatibility is
+permitted. This license does not govern the ownership of independently created
+modpack configurations, recipes, or other original third-party work.
+
+8. Disclaimer and Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COVERED MATERIALS ARE
+PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. THE LICENSOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM THE MATERIALS OR THEIR USE OR DISTRIBUTION,
+WHETHER IN CONTRACT, TORT, OR OTHERWISE. NOTHING IN THIS LICENSE EXCLUDES
+LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED.
+
+9. Governing Language
+
+Only the English terms are authoritative and legally operative. Chinese and
+all other translations are explanatory only, do not create or vary rights or
+obligations, and must not be relied upon as independent licensing terms. In
+any inconsistency, ambiguity, or dispute of interpretation, the English terms
+control, subject to mandatory applicable law.
 
 
-中文解释（仅供理解，以英文版为准）
+中文解释 — 仅供理解，不具有独立协议效力
 
-本许可证分别规定 Motive 原创项目代码、纹理资产和模型资产的使用条件。
-第三方内容仍适用各自的许可证，本许可证不改变其权利归属或授权条件。
+修订日期：2026-11-08。
+状态：适用于附带本修订版的分发副本。
 
-1. 项目代码
+1. 授权方、范围与定义
 
-允许使用、复制、修改和分发项目代码，无需另行申请，但须满足以下条件：
+授权方为原始 Motive 项目相关材料的个人权利人 BigFish520，使用 Motive
+及 Motive Dev Studio 作为项目和工作室名称；这些名称不表示其他著作权人。
+本协议仅授予授权方拥有或有权授予的权利。第三方材料及独立授权组件依其
+各自许可证处理。
 
-(a) 保留上述版权声明及本许可证。
-(b) 明确标注所用代码来源于 Motive。
+“官方 JAR”指由授权方发布或明确指定可供分发的完整 Motive 模组 JAR。
+“未修改”指 JAR 的字节以及其中代码、资产、元数据和声明均保持不变。
+官方项目及分发来源链接：https://github.com/Motive-Dev-Studio/Motive-Release
 
-此项授权仅适用于项目代码，不授予纹理资产或模型资产的使用许可。
-纹理资产和模型资产分别适用第 2 条和第 3 条。
+2. 直接授权
 
-2. 纹理资产
+遵守本协议即可在全球范围内非独占、免许可费地下载、安装、运行、复制、
+托管和再分发未修改的官方 JAR，包括第三方平台、下载镜像、启动器、服务器
+及整合包。无需逐一申请、另行取得许可、事先审批或通知作者。
 
-允许使用、复制、修改和分发项目纹理资产，无需另行申请，但须同时满足
-以下条件：
+此授权不转移所有权，也不允许替换许可条款。后续接收者直接依据本协议
+获得许可，并须遵守相同条件。
 
-(a) 保留上述版权声明及本许可证。
-(b) 明确标注所用纹理资产来源于 Motive。
-(c) 在使用方项目的公开说明、发布页面或公开致谢中，清晰、明确地声明
-    使用了 Motive 的纹理资产。
+3. 再分发与下载服务
 
-仅在隐藏注释中署名不满足公开说明要求。纹理资产的使用许可不包含任何
-关联模型资产的使用许可。
+必须保持官方 JAR 完整、未修改，并保留其中许可证和声明。在下载页、
+整合包页面或容易查阅的随附说明中标明 Motive，并提供第 1 条官方链接。
+可以额外链接具体官方版本，但并非必需。未经明确授权，不得冒充官方渠道
+或暗示获得官方认可。
 
-3. 模型资产：保留全部权利（ARR）
+允许提供下载链接、缓存相同副本及将原样 JAR 放入整合包压缩文件。
+不允许据此替换 JAR 内文件或将其内容重新打包为其他 JAR。除清晰标明名称、
+官方来源链接及保留包内声明外，本条不要求额外公开署名。
 
-模型资产的全部权利由相应权利人保留。除适用法律允许的情形外，任何非
-相应权利人如需使用、复制、修改、提取、分发模型资产，或将其用于其他
-项目，必须事先向该权利人或有权作出授权的作者申请，并取得明确许可。
+4. 整合包与外置调整
 
-公开展示、可供下载或可访问源文件本身不构成模型资产的使用授权。
-第 1 条和第 2 条均不授予模型资产的使用许可。
+整合包可以直接包含未修改的官方 JAR 或安排其下载，无需申请或告知作者；
+保持完整并标注官方来源即可。允许通过外置配置、数据包、配方新增或覆盖、
+合成调整，以及受支持的配置或联动脚本进行修改并随整合包分发。这些调整
+不会仅因改变玩法或配方而被认定为修改 JAR。
 
-模型资产的使用许可不转移所有权。允许使用的范围仅限于相应权利人或
-有权作出授权的作者明确授予的范围。
+除另有许可外，此项授权不允许将 Motive 代码或资产从 JAR 中复制出来单独
+分发。不得将整合包的自定义行为描述为未经调整的官方默认行为。
+如果愿意分享整合包链接，作者非常欢迎查阅，但告知绝非授权条件。
 
-4. 权利归属与署名
+5. 修改版与保留权利
 
-项目代码或资产的使用许可不转移版权，也不允许冒充原作者。署名须明确
-指出原始 Motive 内容，不得将其虚称为使用方的原创作品。
+除独立许可证、授权方明确书面许可或法律不可排除的权利外，不允许分发
+修改过的 Motive JAR 或相关项目代码构建，包括通过反编译、补丁、修改或
+重新编译形成的修改版。公开源码不等于授权分发修改版，标注来源也不能
+代替所需许可。
 
-除相应权利人另行明确约定外，模型资产仍归其所有。在适用法律允许的
-范围内，本许可证未明确授予的权利均予保留。
+本条限制未经授权的修改版分发，并非声称所有反编译行为均违法，不限制
+法律不可排除的权利，也不限制第 4 条允许的外置调整。
 
-5. 免责声明
+模型保留全部权利，但允许随未修改的官方 JAR 正常使用和分发。模型的
+单独提取、修改、分发或复用须另获明确书面许可，法律或其他许可另有规定
+的除外。
 
-在适用法律允许的最大范围内，项目代码及资产按“原样”提供，不提供任何
-明示或默示担保。作者及权利人不对因使用项目代码或资产产生的损失承担责任。
+5.1. 仍受支持的版本
 
-6. 语言效力
+仍受支持版本的项目源码保持非公开。第 2 至 4 条仅授权完整官方 JAR
+分发，不额外授权单独提取、复用、修改或分发相关代码和纹理资产；第 6 条
+独立许可及法律不可排除的权利除外。
 
-英文条款（包括本条）为本许可证的正式版本。中文解释仅为阅读便利而
-提供，不新增权利或义务。英文条款与中文解释出现不一致、歧义或解释
-争议时，以英文条款为准。
+5.2. 停止支持后的源码开放
+
+授权方的发布政策是在停止支持某版本后公开对应项目源码，但不包含模型。
+授权方通过官方项目渠道明确公告版本、停止支持状态和源码开放。出现新版、
+长期未更新或能够访问文件，不自动代表停止支持或取得源码使用权限。
+
+每次源码开放须附明确的版本专属许可声明，写明代码和纹理的授权条件，
+包括修改、再分发权利。对应材料依该声明处理，公开可见不等于不受限制
+的授权。
+
+只有授权方明确发布源码，并附带指明对应版本和材料的许可证时，该版本
+才进入“源码已发布”范围。停止支持本身不改变许可状态。未附带该许可的
+源码公开，不依据本条产生额外权限，不得表述为已获开源授权。
+
+后续许可证明确覆盖的代码与纹理，其使用、修改和再分发以源码发布时
+随附的许可证为准；在其明确授权范围内，该许可证优先于本协议中冲突的
+限制。授权不默示扩展至未开放版本、其他版本或排除的模型资产。属于真正
+开源还是仅源码可见，取决于随附许可证实际授予的权利。本协议不预先指定
+未来采用的许可证，也不提前授予未来开源权限，不规定具体开放时间表。
+
+模型不纳入源码开放，继续 ARR。代码或纹理开放不授权单独复用模型或将
+模型纳入修改版构建。完整官方 JAR 仍可依第 2 至 4 条自由分发，第 6 条
+继续适用。其他未授予权利均予保留。
+
+6. API、第三方内容与既有许可
+
+明确独立授权的 Motive API 继续适用其 MIT 许可证，项目路径为
+src/api/LICENSE，运行 JAR 内路径为 META-INF/licenses/motive-api-LICENSE。
+本协议第 3、5 条不限制该组件的 MIT 权利。第三方组件继续适用各自许可；
+这些例外不扩展至其他 Motive 代码或资产。
+
+本修订适用于依据本修订分发的副本，不追溯撤销早期副本已获授的权限。
+具体副本须按其适用许可证分发，不得替换声明以错误表述其许可条件。
+
+7. 额外授权、所有权与名称
+
+额外许可必须由授权方或其书面授权的代表明确书面授予，写明材料及允许
+行为，仅在所载范围内有效。协作署名、仓库访问权或一般项目关联，不代表
+有权授予许可。
+
+本协议不转移著作权，不赋予代表 Motive 或 Motive Dev Studio 发言、声称
+官方身份或暗示赞助的权利。允许准确使用名称说明模组、来源或整合包兼容
+关系。本协议不规定第三方独立创作的配置、配方或其他作品的权利归属。
+
+8. 免责声明与责任限制
+
+在适用法律允许的最大范围内，材料按“原样”提供，不作任何明示或默示
+担保，包括适销性、特定用途适用性和不侵权担保。授权方不对材料及其使用
+或分发所引起的索赔、损害或其他责任负责，无论基于合同、侵权或其他依据。
+法律不允许排除的责任不在此限。
+
+9. 语言效力
+
+仅英文条款具有正式协议效力。中文及其他语言仅供解释，不新增或改变权利
+义务，不作为独立许可依据。发生不一致、歧义或解释争议时，以英文为准，
+但仍须遵守不可排除的适用法律。
