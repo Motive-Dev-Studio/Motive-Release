@@ -1,0 +1,64 @@
+name: Feedback
+description: Report a Motive issue or suggest an improvement.
+body:
+  - type: markdown
+    attributes:
+      value: 'Please briefly summarize the main topic of this question. Do not add any prefix; simply include it in the body of the text.'
+  - type: dropdown
+    id: category
+    attributes:
+      label: 1. Category
+      multiple: false
+      options:
+        - Bug
+        - Suggestion
+        - Loading Blocker
+        - Compatibility Error
+        - Compatibility Suggestion
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: 2. Minecraft and Motive versions
+      description: Include both versions. Maximum 50 characters.
+      placeholder: Minecraft 26.3 + Motive 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: loader
+    attributes:
+      label: 3. NeoForge version
+      description: Maximum 50 characters.
+      placeholder: 26.3.0.76
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 4. Problem and screenshots
+      description: Describe the problem and reproduction steps in up to 500 characters. Paste or drag in screenshots; image URLs do not count.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 5. Expected result
+      description: Describe the expected behavior or result. Maximum 200 characters.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: 6. Additional information
+      description: Optional. No additional character limit.
+    validations:
+      required: false
+  - type: upload
+    id: logs
+    attributes:
+      label: 7. Logs and error reports
+      description: Optional. Upload up to 10 files, such as logs or archives. Remove private information first.
+    validations:
+      required: false
