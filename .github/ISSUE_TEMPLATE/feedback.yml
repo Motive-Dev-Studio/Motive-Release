@@ -3,7 +3,7 @@ description: Report a Motive issue or suggest an improvement.
 body:
   - type: markdown
     attributes:
-      value: 'Enter only a short summary in the issue title (for example, Test bug). After submission, automation adds the category and versions: [Bug][Minecraft 26.3 + Motive 1.0.0]: Test bug. Search existing issues first. Fields 1–5 are required; fields 6–7 are optional. Remove private information.'
+      value: 'Please briefly summarize the main topic of this question. Do not add any prefix; simply include it in the body of the text.'
   - type: dropdown
     id: category
     attributes:
